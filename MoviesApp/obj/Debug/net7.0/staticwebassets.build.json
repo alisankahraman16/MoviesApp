@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "4CDp+2Du9zC0jCH2vC4IW9S5Fxq3h3PUoqX2gdsyH90=",
+  "Hash": "PpQ+HcSx9xeYNUKkrG0LXoLPI/38T3qxjwYWNFM+6hs=",
   "Source": "MoviesApp",
   "BasePath": "_content/MoviesApp",
   "Mode": "Default",
@@ -83,6 +83,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\aakah\\Documents\\GitHub\\MoviesApp\\MoviesApp\\wwwroot\\img\\Emma.jpg",
+      "SourceId": "MoviesApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\aakah\\Documents\\GitHub\\MoviesApp\\MoviesApp\\wwwroot\\",
+      "BasePath": "_content/MoviesApp",
+      "RelativePath": "img/Emma.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\Emma.jpg"
     },
     {
       "Identity": "C:\\Users\\aakah\\Documents\\GitHub\\MoviesApp\\MoviesApp\\wwwroot\\js\\site.js",

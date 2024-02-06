@@ -1,0 +1,11 @@
+@model Movie
+
+<p>
+    Do you want to delete your favorite show named <b>@Model.MovieTitle</b> ?
+
+    <form asp-action="Delete" method="post">
+        <input type="hidden" name="id" value="@Model.MovieId">
+        <button type="submit" class="btn btn-danger">Yes</button>
+        <a asp-action="Index" class="btn btn-primary">No</a>
+    </form> 
+</p>

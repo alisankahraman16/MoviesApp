@@ -1,0 +1,25 @@
+@model Movie
+
+<h2>My Favourite Shows Update</h2>
+<hr>
+
+<form asp-asp-controller="Movie" asp-action="Edit" method="post">
+    <input type="hidden" asp-for="MovieId" >
+    <div class="mb-3">
+        <label asp-for="MovieTitle" class="form-label">Title</label>
+        <input asp-for="MovieTitle" class="form-control">
+    </div>
+    <div class="mb-3">
+        <label asp-for="Image" class="form-label">Poster</label>
+        <input asp-for="Image" class="form-control">
+    </div>
+    <div class="mb-3">
+        <label asp-for="MovieGenre" class="form-label">Genre</label>
+        <input asp-for="MovieGenre" class="form-control">
+    </div>
+    <div class="mb-3">
+        <label asp-for="MovieRate" class="form-label">Rating</label>
+        <input asp-for="MovieRate" class="form-control">
+    </div>
+    <button type="submit" class="btn btn-secondary">Save</button>
+</form>

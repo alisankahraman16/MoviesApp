@@ -13,6 +13,10 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\aakah\\Documents\\GitHub\\MoviesApp\\MoviesApp\\wwwroot\\img\\Emma.jpg",
+      "PackagePath": "staticwebassets\\img\\Emma.jpg"
+    },
+    {
       "Id": "C:\\Users\\aakah\\Documents\\GitHub\\MoviesApp\\MoviesApp\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },

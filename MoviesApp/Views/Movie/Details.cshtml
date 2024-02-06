@@ -1,0 +1,29 @@
+@model Movie
+
+
+
+<form asp-asp-controller="Movie" asp-action="Details" method="get">
+    
+    <div class="mb-3">
+        
+         <td>
+            @Html.DisplayFor(modelItem => Model.MovieId)
+        </td>
+        
+    </div>
+    <div class="mb-3">
+        <td>@Html.DisplayFor(modelItem => Model.MovieTitle)</td>
+        
+    </div>
+    <div class="mb-3">
+        <td>
+            <img src="~/img/@Html.DisplayFor(modelItem => Model.Image)" class="img-fluid" alt="">
+        </td>
+        
+    </div>
+    <div class="mb-3">
+        <label asp-for="MovieRate" class="form-label">Rating</label>
+        
+    </div>
+    
+</form>

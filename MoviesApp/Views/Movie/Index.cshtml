@@ -1,0 +1,38 @@
+@model IEnumerable<Movie>
+<h2>My Favourite TV Shows</h2>
+
+<a href="/Movie/Create" class="btn btn-secondary">Save Favourite Show</a>
+<hr>
+<table class="table table-bordered table-striped">
+    <thead>
+        <tr>
+            <th>@Html.DisplayNameFor(m => m.MovieId)</th>
+            <th style="width: 50px">@Html.DisplayNameFor(m => m.MovieTitle)</th>
+            <th style="width: 150px; length:100px;">@Html.DisplayNameFor(m => m.Image)</th>
+            <th style="width: 50px">@Html.DisplayNameFor(m => m.MovieGenre)</th>
+            <th>@Html.DisplayNameFor(m => m.MovieRate)</th>
+            <th style="width: 100px"></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.MovieId)
+                </td>
+                <td>@Html.DisplayFor(modelItem => item.MovieTitle)</td>
+                <td>
+                    <img src="~/img/@Html.DisplayFor(modelItem => item.Image)" class="img-fluid" alt="">
+                </td>
+                <td>@Html.DisplayFor(modelItem => item.MovieGenre)</td>
+                <td>@Html.DisplayFor(modelItem => item.MovieRate)</td>
+                <td>
+                    <a asp-controller="Movie" asp-action="Edit" asp-route-id="@item.MovieId" class="btn btn-sm btn-primary">Edit</a>
+                    <a asp-controller="Movie" asp-action="Details" asp-route-id="@item.MovieId" class="btn btn-sm btn-secondary">Details</a>
+                    <a asp-controller="Movie" asp-action="Delete" asp-route-id="@item.MovieId" class="btn btn-sm btn-danger">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
